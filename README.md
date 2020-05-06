@@ -1,6 +1,6 @@
-### Hi there 👋, I'm _Gayathri_ aka _G3_ aka _G3Ram_ 🌟
+## Hi there 👋, I'm _Gayathri_ aka _G3_ 🌟
 
-## I'm a Daughter, Wife, Mother, Developer and an Artist
+### I'm a Wife 💏, Mother 👩‍👧‍👧, Developer 💻 and an Artist 🎨
 
 - 🔭 I’m currently working on a React & AWS based application
 - 🌱 I’m currently learning everything
