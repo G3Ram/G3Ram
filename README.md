@@ -7,9 +7,9 @@ I build and evaluate AI systems end-to-end — from question-generation pipeline
 ## 🔨 What I'm building
 
 - **MindMeet** — UIL academic competition prep app for Texas K-12 students. LLM question-generation pipeline on Vertex AI, FastAPI backend.
-- **Aegis-Guard** — Model-agnostic AI governance gateway. LiteLLM, Presidio PII detection, deepeval, OpenTelemetry. Maps controls to NIST AI RMF and the EU AI Act.
-- **Eval engineering project** — Scoped SWE-task evaluation harness built on the Excalidraw codebase: task specs, transcripts, and grading rubrics.
 - **Tanglish LM** — Character-level language model (nanoGPT) trained on romanized Tamil-English song lyrics, with a custom corpus pipeline.
+- **Cinelens** - Conversational movie-discovery agent built on a provider-agnostic LLM orchestrator, so the underlying model can be swapped without changing agent logic; supports multi-turn dialogue.
+- **LLM Playground** - Model-evaluation harness comparing base vs.\ instruct behavior: tokenization experiments on base models and a Llama-as-a-judge setup to score how base and instruct variants perform.
 
 ## 🛠 Stack
 
