@@ -88,7 +88,7 @@
       <!-- eyes: left stays shut, right peeks -->
       <path class="s" stroke-width="4" d="M166 156q10 8 20 0M168 160l-4 4M184 160l4 4"/>
       <g class="shut"><path class="s" stroke-width="4" d="M214 156q10 8 20 0M216 160l-4 4M232 160l4 4"/></g>
-      <g class="peek"><g class="lid"><circle class="s skin" stroke-width="4" cx="224" cy="156" r="10"/><circle class="fa pupil" cx="224" cy="157" r="4.5"/></g><path class="s h" d="M232 147l5-5"/></g>
+      <g class="peek"><g class="lid"><circle class="s skin" style="stroke-width:1.8" cx="224" cy="156" r="10"/><circle class="fa pupil" cx="224" cy="157" r="4.5"/></g><path class="s h" d="M232 147l5-5"/></g>
       <path class="s calm" stroke-width="4" d="M192 180q8 6 16 0"/>
       <path class="s flat" stroke-width="4" d="M193 182h13"/>
       <path class="s a h" d="M160 172l4-6M166 173l4-6M172 174l4-6M226 174l4-6M232 173l4-6M238 172l4-6"/>
