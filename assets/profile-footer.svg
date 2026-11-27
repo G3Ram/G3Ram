@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" width="1280" height="300" role="img" aria-label="A girl with a messy bun meditating, peeking with one eye. thanks for peeking.">
+<style>
+  .s { fill:none; stroke:#1f1d1a; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+  .h { stroke-width:2.5; }
+  .a { stroke:#1da1f2; }
+  .fa { fill:#1da1f2; stroke:none; }
+  .fi { fill:#1f1d1a; stroke:none; }
+  .skin { fill:#ffffff; }
+  .fold { fill:none; stroke:#ffffff; stroke-width:3; stroke-linecap:round; }
+  .peek, .flat { opacity:0; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .upper { animation:breathe 4s ease-in-out infinite alternate; }
+    .strand { transform-box:fill-box; transform-origin:50% 100%; animation:sway 3s ease-in-out infinite alternate; }
+    .strand:nth-child(even) { animation-duration:2.4s; animation-direction:alternate-reverse; }
+    /* 7s loop: calm, then one eye slowly sneaks open, looks left, looks right, slowly shuts */
+    .head { transform-origin:200px 200px; animation:tilt 7s infinite; }
+    .peek, .flat { animation:show 7s infinite; }
+    .shut, .calm { animation:hide 7s infinite; }
+    .peek .lid { transform-box:fill-box; transform-origin:center; animation:open 7s infinite; }
+    .pupil { animation:look 7s infinite; }
+    .browR { animation:brow 7s infinite; }
+  }
+  @keyframes breathe { to { transform:translateY(-3px); } }
+  @keyframes sway { to { transform:rotate(4deg); } }
+  @keyframes show { 0%,54% { opacity:0; } 55%,93% { opacity:1; } 94%,100% { opacity:0; } }
+  @keyframes hide { 0%,54% { opacity:1; } 55%,93% { opacity:0; } 94%,100% { opacity:1; } }
+  @keyframes open { 0%,55% { transform:scaleY(.1); } 63%,86% { transform:scaleY(1); } 93%,100% { transform:scaleY(.1); } }
+  @keyframes look { 0%,64% { transform:translate(0,0); } 68%,73% { transform:translate(-4px,1px); } 78%,83% { transform:translate(4px,1px); } 87%,100% { transform:translate(0,0); } }
+  @keyframes brow { 0%,55% { transform:translateY(0); } 62%,88% { transform:translateY(-5px); } 93%,100% { transform:translateY(0); } }
+  @keyframes tilt { 0%,55% { transform:rotate(0); } 63%,86% { transform:rotate(3deg); } 93%,100% { transform:rotate(0); } }
+  @keyframes mlook { 0%,20% { transform:translateX(0); } 24%,30% { transform:translateX(2px); } 33%,100% { transform:translateX(0); } }
+
+.t1{font-weight:700;letter-spacing:-1px}
+</style>
+<rect x="2" y="2" width="1276" height="296" rx="28" fill="#ffffff" stroke="#c9c6c0" stroke-width="2"/>
+<g transform="translate(60 -16) scale(.78)">
+  <ellipse cx="200" cy="380" rx="120" ry="6" fill="#1f1d1a" opacity=".08"/>
+
+  <!-- folded legs in blue leggings, slim hips and thighs -->
+  <path class="s" style="fill:#1da1f2" stroke-width="4" d="M162 302Q130 312 104 334Q86 350 96 364Q110 374 146 372Q200 378 254 372Q290 374 304 364Q314 350 296 334Q270 312 238 302Z"/>
+  <path class="fold" d="M158 316Q130 326 114 344M242 316Q270 326 286 344M118 364Q170 357 230 360M282 364Q244 362 200 358"/>
+  <!-- feet resting soles-up on the opposite legs -->
+  <path class="s skin" stroke-width="3.5" d="M198 352Q196 340 182 340L154 336Q140 334 138 342Q138 349 146 351L172 358Q192 362 198 352Z"/>
+  <path class="s h" stroke-width="2" d="M141 338q2-5 7-3M148 336q2-4 6-2M155 336q2-4 6-2"/>
+  <path class="s skin" stroke-width="3.5" d="M202 350Q204 338 218 338L246 334Q260 332 262 340Q262 347 254 349L228 356Q208 360 202 350Z"/>
+  <path class="s h" stroke-width="2" d="M259 336q-2-5-7-3M252 334q-2-4-6-2M245 334q-2-4-6-2"/>
+
+  <g class="upper">
+    <!-- slender arms from bare shoulders down to the knees -->
+    <path class="s" stroke-width="3" d="M192 212Q176 214 166 220M208 212Q224 214 234 220"/>
+    <path class="s skin" stroke-width="3" d="M166 220Q150 226 146 246Q138 266 132 284Q120 304 106 320L114 328Q128 310 140 290Q150 270 168 242"/>
+    <path class="s skin" stroke-width="3" d="M234 220Q250 226 254 246Q262 266 268 284Q280 304 294 320L286 328Q272 310 260 290Q250 270 232 242"/>
+    <!-- hands in a mudra: thumb and index make a circle, three fingers relaxed -->
+    <g transform="translate(110 324) scale(1.45) translate(-110 -324)">
+    <path class="s skin" stroke-width="3" d="M106 320Q96 322 92 330Q92 338 100 341Q109 339 114 328"/>
+    <circle class="s skin" stroke-width="2.5" cx="92" cy="331" r="5"/>
+    <path class="s" stroke-width="3" d="M98 341l-8 10M103 340l-4 12M108 337l1 12"/>
+    </g>
+    <g transform="translate(290 324) scale(1.45) translate(-290 -324)">
+    <path class="s skin" stroke-width="3" d="M294 320Q304 322 308 330Q308 338 300 341Q291 339 286 328"/>
+    <circle class="s skin" stroke-width="2.5" cx="308" cy="331" r="5"/>
+    <path class="s" stroke-width="3" d="M302 341l8 10M297 340l4 12M292 337l-1 12"/>
+    </g>
+    <!-- midriff -->
+    <path class="s skin" stroke-width="3.5" d="M164 280Q163 292 162 302H238Q237 292 236 280Z"/>
+    <path class="s h" d="M197 291q3 3 6 0"/>
+    <!-- blue sleeveless crop top -->
+    <path class="s" style="fill:#1da1f2" stroke-width="3.5" d="M186 213Q200 224 214 213L220 215Q232 228 236 246Q238 268 236 284Q200 291 164 284Q162 268 164 246Q168 228 180 215Z"/>
+    <path class="fold" stroke-width="2" d="M187 220Q200 229 213 220"/>
+    <path class="s" d="M192 196v16M208 196v16"/>
+
+    <g class="head">
+      <!-- messy bun -->
+      <g class="s h">
+        <path class="strand" d="M186 66q-24-22-44-6"/><path class="strand" d="M214 62q8-26 34-22"/>
+        <path class="strand" d="M222 80q26-8 36 10"/><path class="strand" d="M178 80q-28 2-32 26"/>
+        <path class="strand" d="M152 150q-22 14-18 46"/><path class="strand" d="M248 146q24 14 18 48"/>
+      </g>
+      <path class="s" d="M178 104q-14-34 16-44 30-8 40 18 8 22-8 30"/>
+      <path class="s h" d="M186 92q-2-20 18-22 18 0 20 16"/>
+      <!-- face -->
+      <path class="s skin" d="M148 150Q148 98 200 98 252 98 252 150 252 200 200 202 148 200 148 150Z"/>
+      <path class="s skin" d="M149 152q-14-2-12 12 2 12 14 8M251 150q14-4 14 10-2 14-14 10"/>
+      <path class="s" d="M158 126q32-30 70-16 18 8 24 24"/>
+      <path class="s h" d="M172 114q10 10 10 26M196 106q12 18 6 40M224 108q-2 14-12 22"/>
+      <path class="s h" d="M166 140q10-5 20-1"/><path class="s h browR" d="M214 139q10-4 20 1"/>
+      <!-- eyes: left stays shut, right peeks -->
+      <path class="s" stroke-width="4" d="M166 156q10 8 20 0M168 160l-4 4M184 160l4 4"/>
+      <g class="shut"><path class="s" stroke-width="4" d="M214 156q10 8 20 0M216 160l-4 4M232 160l4 4"/></g>
+      <g class="peek"><g class="lid"><circle class="s skin" stroke-width="4" cx="224" cy="156" r="10"/><circle class="fa pupil" cx="224" cy="157" r="4.5"/></g><path class="s h" d="M232 147l5-5"/></g>
+      <path class="s calm" stroke-width="4" d="M192 180q8 6 16 0"/>
+      <path class="s flat" stroke-width="4" d="M193 182h13"/>
+      <path class="s a h" d="M160 172l4-6M166 173l4-6M172 174l4-6M226 174l4-6M232 173l4-6M238 172l4-6"/>
+    </g>
+  </g>
+</g>
+<g font-family="'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif" fill="#1f1d1a">
+<text x="460" y="130" font-size="60" class="t1">thanks for peeking.</text>
+<text x="462" y="190" font-size="28" fill="#57534c">Building things that make learning feel a little lighter.</text>
+<text x="462" y="240" font-size="24" fill="#1da1f2">gayathri.dev</text>
+</g>
+</svg>
